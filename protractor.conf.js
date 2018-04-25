@@ -14,6 +14,12 @@ exports.config = {
   directConnect: true,
   baseUrl: 'http://localhost:4200/',
   framework: 'jasmine',
+  suites: {
+    main: ['e2e/main/**/*e2e-spec.ts'],
+    slow: ['e2e/slow/**/*e2e-spec.ts'],
+    regresion: ['e2e/regresion/**/*e2e-spec.ts'],
+    tariffdetail: ['e2e/tariffdeatail/**/*e2e-spec.ts']
+  },
   jasmineNodeOpts: {
     showColors: true,
     defaultTimeoutInterval: 30000,
